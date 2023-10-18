@@ -14,10 +14,10 @@ body {
 
 .mycontainer {
     transition: transform 0.5s ease-in-out;
-    border-top:2px solid green;
-    border-bottom:2px solid blue;
-    border-left: 2px solid black;
-    border-right: 2px solid yellow;
+    border-top:5px solid green;
+    border-bottom:5px solid blue;
+    border-left: 5px solid black;
+    border-right: 5px solid yellow;
 }
 
 .rotate {
@@ -78,3 +78,45 @@ button:hover {
     transform: scale(1.5);
     transition: 400ms;
 }
+
+
+@media  screen and (max-width: 600px) {
+    .mycontainer {
+        transition: transform 0.5s ease-in-out;
+        border-top:5px solid green;
+        border-bottom:5px solid blue;
+        border-left: 5px solid black;
+        border-right: 5px solid yellow;
+    }
+}
+
+@media   only screen and (min-width: 480px) {
+    body {
+      width: 100%;
+    }
+  }
+@media   only screen and (min-width: 400px) {
+    .mycontainer  {
+      width: 100vh;
+    }
+  }
+@media  only screen and (min-width: 768px) 
+{
+    body {
+      width: 100%;
+    }
+  }
+@media    only screen and (min-width: 992px) {
+    body {
+      width: 100%;
+    }
+  }
+@media   only screen and (min-width: 1280px)   {
+    body {
+      width: 100%;
+    }
+  }
+
+
+
+    

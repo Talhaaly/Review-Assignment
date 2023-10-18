@@ -13,13 +13,19 @@ var usersInfo = [
         name: "kane williamson",
         bio: "Batsman",
         reviews: "Kane Stuart Williamson is a New Zealand cricketer. On 27 February 2023, Williamson became the all-time leading run-scorer for New Zealand in test cricket.Widely regarded as one of the greatest batsmen of his generation, he is a right-handed batsman and an occasional off spin bowler. "
+    },
+    {
+        name: "Ab de-villiers ",
+        bio: "Batsman",
+        reviews: "Abraham Benjamin de Villiers is a former South African international cricketer. AB de Villiers was named as the ICC ODI Player of the Year three times during his 15-year international career and was one of the five Wisden cricketers of the decade at the end of 2019."
     }
 ]
 
 let images = [
     "./assets/Card pic 1.webp",
     "./assets/card pic 2.jpeg",
-    "./assets/card pic 3.webp"
+    "./assets/card pic 3.webp",
+    "./assets/card pic 4.webp"
 ]
 
 let cardNum = 0
@@ -32,7 +38,7 @@ let rotate = document.querySelector(".mycontainer")
 
 
 function next() {
-    if (cardNum < usersInfo.length - 1 ) {
+    if (cardNum < usersInfo.length - 1) {
         cardNum++
         imgIndex++
         image.src = images[imgIndex]
@@ -40,7 +46,7 @@ function next() {
         bio.textContent = usersInfo[cardNum].bio
         reviews.textContent = usersInfo[cardNum].reviews
         rotate.classList.toggle('rotate');
-    } else if (cardNum == usersInfo.length - 1 ) {
+    } else if (cardNum == usersInfo.length - 1) {
         cardNum = 0
         imgIndex = 0
         image.src = images[imgIndex]
@@ -63,7 +69,7 @@ function previous() {
         bio.textContent = usersInfo[cardNum].bio;
         reviews.textContent = usersInfo[cardNum].reviews;
         rotate.classList.toggle('rotate');
-    } else if (cardNum == 0 ) {
+    } else if (cardNum == 0) {
         cardNum = usersInfo.length
         imgIndex = images.length
         cardNum--
@@ -73,5 +79,5 @@ function previous() {
         bio.textContent = usersInfo[cardNum].bio
         reviews.textContent = usersInfo[cardNum].reviews
         rotate.classList.toggle('rotate');
-    } 
+    }
 }
