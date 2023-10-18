@@ -96,8 +96,8 @@ button:hover {
     }
   }
 @media   only screen and (min-width: 400px) {
-    .mycontainer  {
-      width: 100vh;
+    body {
+      width: 100%;
     }
   }
 @media  only screen and (min-width: 768px) 
